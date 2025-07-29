@@ -1,4 +1,4 @@
-# MERN Chatbot App
+# iChat- Hybrid session and token management chatbot
 
 A session-based chatbot built with the MERN stack.
 
