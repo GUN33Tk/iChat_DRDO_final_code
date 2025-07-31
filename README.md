@@ -11,13 +11,13 @@
 
 ### Steps to run 
 ```bash
-### 1. Backend
+### 1. Backend - open a terminal and run these
 
 cd backend
 npm install cookie-parser
 npm run dev
 
-### 2. Frontend 
+### 2. Frontend - open another terminal and run these after backend, chatbot will start.
 
 cd frontend
 npm install js-cookie
