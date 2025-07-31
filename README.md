@@ -1,4 +1,4 @@
-# MERN Chatbot App
+# iChat- Hybrid session and token management chatbot
 
 A session-based chatbot built with the MERN stack.
 
@@ -12,6 +12,7 @@ A session-based chatbot built with the MERN stack.
 ### Working demo link- https://drive.google.com/file/d/1kSckxXu5b3o119jNVvxRoMdTdcVQyjPF/view?usp=drivesdk
 
 ### 1. Backend
+
 ```bash
 cd backend
 npm install cookie-parser
