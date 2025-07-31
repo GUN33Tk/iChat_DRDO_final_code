@@ -10,15 +10,16 @@
 ### 0. first change both package_frontend and backend files name to package.json and put them in their respective folders according to the file structure which is provided at the end of the readme file
 ### Working demo link- https://drive.google.com/file/d/1kSckxXu5b3o119jNVvxRoMdTdcVQyjPF/view?usp=drivesdk
 
+### How to run 
+```bash
 ### 1. Backend
 
-```bash
 cd backend
 npm install cookie-parser
 npm run dev
 
 ### 2. Frontend 
-```bash
+
 cd frontend
 npm install js-cookie
 npm start
