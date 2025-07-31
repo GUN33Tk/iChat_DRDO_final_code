@@ -30,7 +30,7 @@ const App = () => {
       const res = await axios.post('http://localhost:6001/api/chat/session', { name }, { withCredentials: true });
       setSessions([...sessions, res.data]);
       setCurrentSession(res.data);
-      setIsMobileMenuOpen(false); // Close menu after creating session
+      setIsMobileMenuOpen(false); 
     } catch (err) {
       console.error('Error creating session:', err);
     }
@@ -50,7 +50,7 @@ const App = () => {
 
   const setSession = (session) => {
     setCurrentSession(session);
-    setIsMobileMenuOpen(false); // Close menu when session is selected
+    setIsMobileMenuOpen(false); 
   };
 
   return (

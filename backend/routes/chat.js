@@ -3,7 +3,7 @@ const router = express.Router();
 const ChatSession = require('../models/ChatSession');
 const ChatMessage = require('../models/ChatMessage');
 
-// ✅ Create a session and store sessionId in cookie
+// creating session and storing session id in the cookie
 router.post('/session', async (req, res) => {
   try {
     const session = new ChatSession({ name: req.body.name });
@@ -21,8 +21,7 @@ router.post('/session', async (req, res) => {
     res.status(500).json({ error: 'Failed to create session' });
   }
 });
-
-// ✅ Get all sessions
+//retreiving sessions 
 router.get('/sessions', async (req, res) => {
   try {
     const sessions = await ChatSession.find();
@@ -33,7 +32,7 @@ router.get('/sessions', async (req, res) => {
   }
 });
 
-// ✅ Get messages by sessionId
+// getting messages by sessionId
 router.get('/messages/:sessionId', async (req, res) => {
   try {
     const sessionId = req.params.sessionId;
@@ -45,7 +44,7 @@ router.get('/messages/:sessionId', async (req, res) => {
   }
 });
 
-// ✅ Send message + basic bot reply
+// senidng message + basic bot reply
 router.post('/message', async (req, res) => {
   try {
     const { sessionId, role, content } = req.body;
@@ -54,7 +53,7 @@ router.post('/message', async (req, res) => {
     const userMessage = new ChatMessage({ sessionId, role, content });
     await userMessage.save();
 
-    // Generate a basic bot reply
+    
     let reply = 'Sorry, I didn’t understand that.';
     const lower = content.toLowerCase();
     if (lower.includes('hello')) reply = 'Hi there! How can I help you today?';
@@ -69,7 +68,7 @@ router.post('/message', async (req, res) => {
     });
     await botMessage.save();
 
-    // ⏳ Delay of 1.5 seconds
+    ///adding delay like a real chatbot would do
     setTimeout(() => {
       res.status(200).json(botMessage);
     }, 1500);
@@ -80,7 +79,7 @@ router.post('/message', async (req, res) => {
   }
 });
 
-// ✅ Delete session
+//session deletion here
 router.delete('/session/:sessionId', async (req, res) => {
   try {
     const { sessionId } = req.params;

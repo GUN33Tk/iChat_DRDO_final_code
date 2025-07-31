@@ -6,7 +6,7 @@ const ChatWindow = ({ session }) => {
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
   const inputRef = useRef(null);
-  const bottomRef = useRef(null); // 👈 Add scroll ref
+  const bottomRef = useRef(null); 
 
   useEffect(() => {
     if (!session?._id) return;
@@ -23,7 +23,7 @@ const ChatWindow = ({ session }) => {
     fetchMessages();
   }, [session]);
 
-  // Focus input and scroll to bottom when messages or session change
+  // Focusing the input and scroll to bottom when messages or session change
   useEffect(() => {
     if (session?._id && inputRef.current) {
       inputRef.current.focus();
