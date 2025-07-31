@@ -10,6 +10,7 @@ A session-based chatbot built with the MERN stack.
 ## 🚀 How to Run
 ### 0. first change both package_frontend and backend files name to package.json and put them in their respective folders according to the file structure which is provided at the end of the readme file
 ### 1. Backend
+### Video demo of the project - https://drive.google.com/file/d/1kMapADBSCdxfoxQyI-UtT1xP1iJxGIT5/view?usp=drivesdk
 ```bash
 cd backend
 npm install cookie-parser
