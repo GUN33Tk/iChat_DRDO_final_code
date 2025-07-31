@@ -6,11 +6,10 @@
 - **Backend:** Node.js, Express
 - **Database:** MongoDB with Mongoose
 
-## How to Run
-### 0. first change both package_frontend and backend files name to package.json and put them in their respective folders according to the file structure which is provided at the end of the readme file
+## Project Steps and demo
 ### Working demo link- https://drive.google.com/file/d/1kSckxXu5b3o119jNVvxRoMdTdcVQyjPF/view?usp=drivesdk
 
-### How to run 
+### Steps to run 
 ```bash
 ### 1. Backend
 
