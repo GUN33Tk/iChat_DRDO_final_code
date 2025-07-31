@@ -1,6 +1,5 @@
 # iChat- Hybrid session and token management chatbot
 
-A session-based chatbot built with the MERN stack.
 
 ## Tech Stack
 - **Frontend:** React, Axios
@@ -18,35 +17,30 @@ cd backend
 npm install cookie-parser
 npm run dev
 
-## 2. frontend
+### 2. Frontend 
 ```bash
 cd frontend
 npm install js-cookie
 npm start
 
 ## 3. folder structure
-chatbot-mern/
+session-based-authentication-chatbot/
 ├── backend/
 │   ├── models/
-│   │   ├── Message.js          # Mongoose schema for chat messages
-│   │   └── Session.js          # Mongoose schema for chat sessions
+│   │   ├── Message.js         
+│   │   └── Session.js         
 │   ├── routes/
-│   │   └── chat.js             # API routes for sessions and messages
-│   ├── server.js               # Express server setup
-│   └── .env                    # Environment variables (PORT, MONGO_URI)
+│   │   └── chat.js             
+│   ├── server.js               
+│   └── .env                    
 │
 ├── frontend/
-│   ├── public/
-│   │   └── index.html          # Main HTML template
 │   ├── src/
-│   │   ├── components/
-│   │   │   ├── ChatWindow.jsx  # Chat interface for messages
-│   │   │   └── SessionList.jsx # Sidebar to manage sessions
-│   │   ├── App.jsx             # Main React app combining components
-│   │   ├── index.js            # Entry point for React DOM rendering
-│   │   └── index.css           # Global styles (optional)
-│   └── package.json            # Frontend dependencies and scripts
-│
-├── package.json                # Backend dependencies and scripts
-├── README.md                   # Project documentation
-└── README.pdf                  # (Optional) PDF version of README
+│   │   ├── components/ 
+│   │   │   └── SessionList.jsx 
+│   │   ├── App.jsx             
+│   │   ├── index.js           
+│   │   └── index.css          
+│   └── package.json            
+│ 
+├── README.md                                   
