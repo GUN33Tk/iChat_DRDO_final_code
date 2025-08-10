@@ -68,7 +68,7 @@ body::before {
   opacity: 0.6;
 }
 
-/* Sidebar Header */
+ 
 .session-list h2 {
   font-size: 20px;
   font-weight: 600;
@@ -724,12 +724,9 @@ body::before {
   opacity: 0.7;
 }
 
-/* ===========================================
-   MOBILE HAMBURGER MENU 
-   
-   =========================================== */
 
-/* Hamburger Menu Button */
+
+
 .hamburger-btn {
   display: none;
   position: fixed;
@@ -938,4 +935,5 @@ body::before {
   .hamburger-btn span {
     width: 16px;
   }
-}
+} 
+ 
